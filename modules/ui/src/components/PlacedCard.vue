@@ -1,5 +1,7 @@
 <template>
-  {{ card.ideas[0] }}
+  <div v-for="idea in card.ideas">
+    {{idea}}
+  </div>
 </template>
 
 <script>
