@@ -1,18 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <CardsCombination :cards="drawnCards"></CardsCombination>
+  <button @click="drawCard">Draw card</button>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import {defineComponent} from 'vue'
+import {CardLoader} from './components/card-loader';
+import {Deck} from './components/deck';
+import {Card} from './components/card';
+import CardsCombination from './components/CardsCombination.vue';
+
+const deck = new Deck(CardLoader.loadCards());
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    CardsCombination
+  },
+  data() {
+    const drawnCards: Card[] = [];
+    return {
+      drawnCards: drawnCards
+    }
+  },
+  methods: {
+    drawCard() {
+     this.drawnCards.push(deck.draw());
+    }
   }
 })
+
 </script>
 
 <style>
