@@ -1,5 +1,8 @@
 <template>
-  <v-rect :config="cardConfig"></v-rect>
+  <v-group :config="{draggable:true}">
+    <v-rect :config="cardConfig"></v-rect>
+    <v-text :config="ideaConfig"></v-text>
+  </v-group>
 </template>
 
 <script>
@@ -15,8 +18,13 @@ export default {
         width:100,
         height:100,
         fill: 'red',
-        draggable:true,
         stroke: 'black'
+      },
+      ideaConfig: {
+        text: this.card.ideas[0],
+        fontSize: 15,
+        x:325,
+        y:100
       }
     }
   },
