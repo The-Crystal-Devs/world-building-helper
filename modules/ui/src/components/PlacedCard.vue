@@ -1,9 +1,5 @@
 <template>
-  <div class="card">
-    <div v-for="idea in card.ideas">
-      {{ idea }}
-    </div>
-  </div>
+  <v-rect :config="cardConfig"></v-rect>
 </template>
 
 <script>
@@ -11,6 +7,19 @@ import {Card} from "./card";
 
 export default {
   name: "PlacedCard",
+  data() {
+    return {
+      cardConfig: {
+        x: 300,
+        y: 100,
+        width:100,
+        height:100,
+        fill: 'red',
+        draggable:true,
+        stroke: 'black'
+      }
+    }
+  },
   props: {
     card: {
       type: Card,
