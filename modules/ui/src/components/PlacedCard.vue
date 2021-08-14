@@ -62,10 +62,4 @@ export default {
 </script>
 
 <style scoped>
-.card {
-  border: 4px solid #2c3e50;
-  width:200px;
-  height:200px;
-  margin: auto auto 10px;
-}
 </style>
