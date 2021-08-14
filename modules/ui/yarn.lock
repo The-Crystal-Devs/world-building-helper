@@ -318,6 +318,11 @@ json5@^1.0.1:
   dependencies:
     minimist "^1.2.0"
 
+konva@^8.1.3:
+  version "8.1.3"
+  resolved "https://registry.yarnpkg.com/konva/-/konva-8.1.3.tgz#d13627446894f954c4b78280b26757af6821b822"
+  integrity sha512-3/6fkpgQOMP4dB5qnOAZcCu4ZUmbZEg0Yy01yKEIDWUSJumGOLApTKkS5jvq9KTniijpHGAsKlz1c9fC0Kad+w==
+
 listenercount@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/listenercount/-/listenercount-1.0.1.tgz#84c8a72ab59c4725321480c975e6508342e70937"
@@ -594,6 +599,11 @@ vue-tsc@^0.0.24:
   integrity sha512-Qx0V7jkWMtvddtaWa1SA8YKkBCRmjq9zZUB2UIMZiso6JSH538oHD2VumSzkoDnAfFbY3t0/j1mB2abpA0bGWA==
   dependencies:
     unzipper "0.10.11"
+
+vue3-konva@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/vue3-konva/-/vue3-konva-2.1.7.tgz#d6fa1357eaf22e89487049709ebf7128ea7643a6"
+  integrity sha512-3HMDdE6w9cDj5VSXJ9hFwTJ/S/iCzOIWcsi/QvWWxeIrLF6y3AafBtFw1beX8BrKYzmi88kT6j5Am6CNmP/ffw==
 
 vue@^3.0.5:
   version "3.1.1"
